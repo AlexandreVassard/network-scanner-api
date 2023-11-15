@@ -11,3 +11,4 @@ README.md
 .env
 .env.example
 data/network-scanner.db
+.github
