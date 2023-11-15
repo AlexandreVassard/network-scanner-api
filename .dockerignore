@@ -1,0 +1,13 @@
+.vscode
+dist
+node_modules
+test
+.dockerignore
+.eslintrc.js
+.gitignore
+.prettierrc
+Dockerfile
+README.md
+.env
+.env.example
+data/network-scanner.db
