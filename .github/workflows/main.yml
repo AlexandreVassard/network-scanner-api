@@ -44,4 +44,4 @@ jobs:
 
       - name: Run Docker Buildx (main branch only)
         if: github.ref == 'refs/heads/main'
-        run: docker buildx build -t alexandrevsd/network-scanner-api:latest -t alexandrevsd/network-scanner-api:${{ steps.version.outputs.VERSION }} . --push
+        run: docker buildx build --platform=linux/amd64,linux/arm64 -t alexandrevsd/network-scanner-api:latest -t alexandrevsd/network-scanner-api:${{ steps.version.outputs.VERSION }} . --push
