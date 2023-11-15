@@ -40,6 +40,6 @@ jobs:
           docker buildx inspect --bootstrap
 
       - name: Run Docker Buildx (main branch only)
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/ci'
         run: |
           docker buildx build -t alexandrevsd/network-scanner-api:latest -t alexandrevsd/network-scanner-api:${{ steps.version.outputs.VERSION }} . --push
